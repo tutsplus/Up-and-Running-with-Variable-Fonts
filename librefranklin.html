@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Libre Franklin Variable</title>
+  <style>
+
+  @supports (font-variation-settings: normal){
+  
+    @font-face {
+      font-family: 'Libre Franklin';
+      src: url('fonts/LibreFranklinRomans.woff2');
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Libre Franklin';
+      src: url('fonts/LibreFranklinItalics.woff2');
+      font-style: italic;
+    }
+
+    html {
+      font-size: 2.5rem;
+      line-height: 1.618;
+      font-family: 'Libre Franklin';
+      /* font-weight: 400 */
+      /* font-variation-settings: 'wght' 154; */
+    }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .thin {
+    font-variation-settings: "wght" 40;
+    font-weight: 40;
+  }
+
+  .extra_light {
+    font-variation-settings: "wght" 50;
+  }
+
+  .light {
+    font-variation-settings: "wght" 66;
+  }
+
+  .regular {
+    font-variation-settings: "wght" 84;
+  }
+
+  .medium {
+    font-variation-settings: "wght" 106;
+  }
+
+  .semi_bold {
+    font-variation-settings: "wght" 130;
+  }
+
+  .bold {
+    font-variation-settings: "wght" 154;
+  }
+
+  .extra_bold {
+    font-variation-settings: "wght" 178;
+  }
+
+  .black {
+    font-variation-settings: "wght" 200;
+  }
+
+}
+
+@supports not (font-variation-settings: normal){
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('fonts/LibreFranklinRomans.woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('fonts/LibreFranklinItalics.woff2');
+  font-style: italic;
+}
+
+html {
+  font-size: 2.5rem;
+  line-height: 1.618;
+  font-family: 'Arial';
+  /* font-weight: 400 */
+  /* font-variation-settings: 'wght' 154; */
+}
+
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="thin">Libre Franklin Thin</div>
+    <div class="thin italic">Libre Franklin Thin Italic</div>
+    
+    <div class="extra_light">Libre Franklin Extra Light</div>
+    <div class="extra_light italic">Libre Franklin Extra Light Italic</div>
+    
+    <div class="light">Libre Franklin Light</div>
+    <div class="light italic">Libre Franklin Light Italic</div>
+    
+    <div class="regular">Libre Franklin Regular</div>
+    <div class="regular italic">Libre Franklin Regular Italic</div>
+    
+    <div class="medium">Libre Franklin Medium</div>
+    <div class="medium italic">Libre Franklin Medium Italic</div>
+    
+    <div class="semi_bold">Libre Franklin Semi Bold</div>
+    <div class="semi_bold italic">Libre Franklin Semi Bold Italic</div>
+    
+    <div class="bold">Libre Franklin Bold</div>
+    <div class="bold italic">Libre Franklin Bold Italic</div>
+    
+    <div class="extra_bold">Libre Franklin Extra Bold</div>
+    <div class="extra_bold italic">Libre Franklin Extra Bold Italic</div>
+    
+    <div class="black">Libre Franklin Black</div>
+    <div class="black italic">Libre Franklin Black Italic</div>
+  
+</body>
+</html>

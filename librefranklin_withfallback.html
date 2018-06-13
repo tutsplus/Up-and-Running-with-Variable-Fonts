@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Libre Franklin with Fallback</title>
+  <style>
+
+    @supports (font-variation-settings: normal){
+
+      @font-face {
+        font-family: 'Libre Franklin';
+        src: url('fonts/LibreFranklinRomans.woff2');
+        font-style: normal;
+      }
+
+      .regular {
+        font-variation-settings: "wght" 84;
+      }
+
+      .bold {
+        font-variation-settings: "wght" 154;
+      }
+
+    }
+  
+    @supports not (font-variation-settings: normal){
+
+      @font-face {
+        font-family: 'Libre Franklin';
+        src: url('fonts/LibreFranklin-Regular.woff2');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: 'Libre Franklin';
+        src: url('fonts/LibreFranklin-Bold.woff2');
+        font-weight: bold;
+      }
+
+      .regular {
+        font-weight: normal;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+    }
+
+    html {
+      font-size: 2.5rem;
+      line-height: 1.618;
+      font-family: 'Libre Franklin';
+    }
+
+
+
+  </style>
+</head>
+<body>
+    
+  <div class="regular">Libre Franklin Regular</div>
+    
+  <div class="bold">Libre Franklin Bold</div>
+  
+</body>
+</html>
